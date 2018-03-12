@@ -596,13 +596,10 @@ body.docs #nav {
   display: none;
 }
 #hero .button {
-  margin: 1em 0;
+  margin: 1em 1em;
   font-size: 1.05em;
   font-weight: 600;
   letter-spacing: 0.1em;
-}
-#hero .button:first-child {
-  margin-right: 1em;
 }
 #hero .social-buttons {
   list-style-type: none;
