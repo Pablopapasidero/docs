@@ -2,19 +2,19 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Timelines — Anima</title>
+        <title>States — Anima</title>
         <meta charset="utf-8">
         <link rel="shortcut icon" type="image/png" href="https://animaapp.s3.amazonaws.com/home/favicon.png" />
         <meta name="description" content="Empowering designers.">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
         <meta property="og:type" content="article">
-        <meta property="og:title" content="Timelines — Anima">
+        <meta property="og:title" content="States — Anima">
         <meta property="og:description" content="Empowering designers.">
         <meta property="og:image" content="https://animaapp.s3.amazonaws.com/home/Social_cover.png">
 
         <meta name="twitter:card" content="summary">
-        <meta name="twitter:title" content="Timelines">
+        <meta name="twitter:title" content="States">
         <meta name="twitter:description" content="Empowering designers.">
         <meta name="twitter:image" content="https://animaapp.s3.amazonaws.com/home/Social_cover.png">
 
@@ -122,7 +122,7 @@ mixpanel.init("b41fb20c39155097cde1725a43229b9d");</script><!-- end Mixpanel -->
                 
                 
                 <li>
-                    <a href="/docs/v2/timeline/states.html" class="sidebar-link">States</a>
+                    <a href="/docs/v2/timeline/states.html" class="sidebar-link current">States</a>
                 </li>
                 
             
@@ -154,7 +154,7 @@ mixpanel.init("b41fb20c39155097cde1725a43229b9d");</script><!-- end Mixpanel -->
                 
                 
                 <li>
-                    <a href="/docs/v2/timeline/timelines.html" class="sidebar-link current">Timelines</a>
+                    <a href="/docs/v2/timeline/timelines.html" class="sidebar-link">Timelines</a>
                 </li>
                 
             
@@ -179,49 +179,48 @@ mixpanel.init("b41fb20c39155097cde1725a43229b9d");</script><!-- end Mixpanel -->
 
 <div class="content timeline with-sidebar ">
     
-      <h1>Timelines</h1>
+      <h1>States</h1>
     
-    <h2 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h2><p>A Timeline represents the duration, delay and easing of a specific movement of a layer.</p>
-<p>For example, if a layer moves from left to right, the Timeline allows us to control how much time this movement will take (duration), if there is a delay, and the easing.</p>
-<p><img src="/docs/images/timeline/terminology/timelines1.png" alt=""></p>
-<ul>
-<li>Each layer can have its own <code>Timeline</code>.</li>
-<li><p>By moving and streching a <code>Timeline</code>, you can determine the delay and duration of a specific animation.</p>
-</li>
-<li><p>To control the <code>delay</code> of an animation, drag the <code>Timeline</code> left or right.</p>
-</li>
-<li>To control the <code>duration</code> of an animation, stretch or shrink the <code>Timeline</code>.</li>
+    <ul>
+<li>A <code>State</code> is a canvas which contains all the layers imported from Sketch.</li>
+<li>The <code>Initial State</code> can be imported from a Sketch <code>Artboard</code> or <code>Group</code>.</li>
+<li>All the layers that exists in the <code>Initial State</code>, will exists in all other <code>Keyframes</code> (but can be hidden).</li>
+<li>Layers cannot be added or removed from a <code>State</code>, but can be made hidden or visible.</li>
+<li>You can have as many <code>States</code> as you want, but to create an animation you need the <code>Initial State</code> and at least one more.</li>
 </ul>
-<p><img src="/docs/images/timeline/terminology/timelines2.png" alt=""></p>
-<h2 id="Delay"><a href="#Delay" class="headerlink" title="Delay"></a>Delay</h2><p><img src="/docs/images/timeline/delay.gif" alt=""></p>
-<h2 id="Duration"><a href="#Duration" class="headerlink" title="Duration"></a>Duration</h2><p><img src="/docs/images/timeline/duration.gif" alt=""></p>
-<h2 id="Curve"><a href="#Curve" class="headerlink" title="Curve"></a>Curve</h2><p>You can use pre-defined easing functions:</p>
-<ul>
-<li>Ease In</li>
-<li>Ease Out</li>
-<li>Ease In Out </li>
-<li>Linear</li>
+<h3 id="The-Initial-State"><a href="#The-Initial-State" class="headerlink" title="The Initial State"></a>The Initial State</h3><ul>
+<li>The <code>Initial State</code> is the starting point. That means all the layers are positioned as they are positioned in the Sketch document.</li>
+<li>You cannot change layers size or position or any other property in the <code>Initial State</code>.</li>
+<li>To animate layers movement or resizing, create another <code>State</code> and move layers around.</li>
 </ul>
-<p>or create your own with the Cubic Bezier tool:</p>
-<p><img src="/docs/images/timeline/terminology/curve1.png" alt=""></p>
+<p><img src="/docs/images/timeline/terminology/initial-state.png" alt=""></p>
+<p><img src="/docs/images/timeline/terminology/states.png" alt=""></p>
+<h3 id="States-Left-Sidebar"><a href="#States-Left-Sidebar" class="headerlink" title="States Left Sidebar"></a>States Left Sidebar</h3><ul>
+<li>The <code>States Sidebar</code> is a list of all the <code>States</code>. </li>
+<li>In each <code>State</code> you can view and select all the sub layers and groups of the <code>State</code>.</li>
+<li>All the <code>States</code> contain exactly the same layers.</li>
+<li>The <code>State</code> has the same layer heirarchy as imported from the Sketch document.</li>
+<li>In each <code>State</code> (except the <code>Initial State</code>) you can show/hide layers and change their properties, which will result in an animation.</li>
+</ul>
+<p><img src="/docs/images/timeline/terminology/states-sidebar.png" alt=""></p>
 
     
       <div class="guide-links">
         
-          <span>← <a href="/docs/v1/timeline/actions.html">Actions</a></span>
+          <span>← <a href="/docs/v1/timeline/layers.html">Layers</a></span>
         
-          <span>← <a href="/docs/v2/timeline/actions.html">Actions</a></span>
+          <span>← <a href="/docs/v2/timeline/layers.html">Layers</a></span>
         
         
-          <span style="float:right"><a href="/docs/v1/timeline/samples.html">Samples</a> →</span>
+          <span style="float:right"><a href="/docs/v1/timeline/transitions.html">Transitions</a> →</span>
         
-          <span style="float:right"><a href="/docs/v2/timeline/samples.html">Samples</a> →</span>
+          <span style="float:right"><a href="/docs/v2/timeline/transitions.html">Transitions</a> →</span>
         
       </div>
     
     <div class="footer">
       Caught a mistake or want to contribute to the documentation?
-      <a href="https://github.com/AnimaApp/docs/blob/master/src/v1/timeline/timelines.md" target="_blank">
+      <a href="https://github.com/AnimaApp/docs/blob/master/src/v1/timeline/states.md" target="_blank">
         Edit this page on Github!
       </a>
     </div>
