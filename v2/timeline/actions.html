@@ -2,19 +2,19 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Samples — Anima</title>
+        <title>Actions — Anima</title>
         <meta charset="utf-8">
         <link rel="shortcut icon" type="image/png" href="https://animaapp.s3.amazonaws.com/home/favicon.png" />
         <meta name="description" content="Empowering designers.">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
         <meta property="og:type" content="article">
-        <meta property="og:title" content="Samples — Anima">
+        <meta property="og:title" content="Actions — Anima">
         <meta property="og:description" content="Empowering designers.">
         <meta property="og:image" content="https://animaapp.s3.amazonaws.com/home/Social_cover.png">
 
         <meta name="twitter:card" content="summary">
-        <meta name="twitter:title" content="Samples">
+        <meta name="twitter:title" content="Actions">
         <meta name="twitter:description" content="Empowering designers.">
         <meta name="twitter:image" content="https://animaapp.s3.amazonaws.com/home/Social_cover.png">
 
@@ -91,50 +91,61 @@ mixpanel.init("b41fb20c39155097cde1725a43229b9d");</script><!-- end Mixpanel -->
                 
                 
                 <li>
+                    <a href="/docs/v2/timeline/index.html" class="sidebar-link">Introduction</a>
+                </li>
+            
+                
+                
+                <li>
                     <a href="/docs/v1/timeline/install.html" class="sidebar-link">Installation</a>
                 </li>
             
                 
                 
                 <li>
-                    <a href="/docs/v1/timeline/02-installation.html" class="sidebar-link">Installation</a>
+                    <a href="/docs/v2/timeline/install.html" class="sidebar-link">Installation</a>
                 </li>
             
                 
                 
                 <li>
-                    <a href="/docs/v1/timeline/keyframes.html" class="sidebar-link">Keyframes</a>
+                    <a href="/docs/v2/timeline/layers.html" class="sidebar-link">Layers</a>
                 </li>
             
                 
                 
                 <li>
-                    <a href="/docs/v1/timeline/transitions.html" class="sidebar-link">Transitions</a>
+                    <a href="/docs/v2/timeline/states.html" class="sidebar-link">States</a>
                 </li>
             
                 
                 
                 <li>
-                    <a href="/docs/v1/timeline/layers.html" class="sidebar-link">Layers</a>
+                    <a href="/docs/v2/timeline/transitions.html" class="sidebar-link">Transitions</a>
                 </li>
             
                 
                 
                 <li>
-                    <a href="/docs/v1/timeline/timelines.html" class="sidebar-link">Timelines</a>
+                    <a href="/docs/v2/timeline/actions.html" class="sidebar-link current">Actions</a>
                 </li>
             
                 
                 
                 <li>
-                    <a href="/docs/v1/timeline/samples.html" class="sidebar-link current">Samples</a>
+                    <a href="/docs/v2/timeline/timelines.html" class="sidebar-link">Timelines</a>
+                </li>
+            
+                
+                
+                <li>
+                    <a href="/docs/v2/timeline/samples.html" class="sidebar-link">Samples</a>
                 </li>
             
         </ul>
     </div>
     <div style="font-size: 12px; margin-top: 10px;">
         <p>Built with ❤️ &nbsp in NYC & TLV</p>
-        <p>Site powered by <a style="color: #4222f1;" href="https://hexo.io">Hexo.io</a> & <a style="color: #4222f1;" href="https://vuejs.org">Vue.js</a></p>
     </div>
 </div>
 <script async defer src="https://animaapp.s3.amazonaws.com/launchpad-static/lp4.js"></script>
@@ -142,26 +153,34 @@ mixpanel.init("b41fb20c39155097cde1725a43229b9d");</script><!-- end Mixpanel -->
 
 <div class="content timeline with-sidebar ">
     
-      <h1>Samples</h1>
+      <h1>Actions</h1>
     
-    <h2 id="Two-Dots-Dancing"><a href="#Two-Dots-Dancing" class="headerlink" title="Two Dots Dancing"></a>Two Dots Dancing</h2><p><img src="/docs/images/timeline/samples/two-dots.gif" alt=""></p>
-<p><a href="/docs/assets/timeline/samples/Timeline-Sample-Glowing Dots Dance.sketch">Download</a></p>
-<h2 id="Sunrise-and-Sunset"><a href="#Sunrise-and-Sunset" class="headerlink" title="Sunrise and Sunset"></a>Sunrise and Sunset</h2><p><img src="/docs/images/timeline/samples/sunrise.gif" alt=""></p>
-<p><a href="/docs/assets/timeline/samples/Timeline-Samples-Sunrise.sketch">Download</a></p>
-<h2 id="Heart-Color-Change"><a href="#Heart-Color-Change" class="headerlink" title="Heart Color Change"></a>Heart Color Change</h2><p><img src="/docs/images/timeline/samples/heart-colors.gif" alt=""></p>
-<p><a href="/docs/assets/timeline/samples/Timeline-Sample-Heart-Change-Colors.sketch">Download</a></p>
+    <p>An <code>Action</code> is a combination of a <code>Layer</code>, an <code>Event</code> and a <code>Target State</code>.</p>
+<p><img src="/docs/images/timeline/terminology/actions1.png" alt=""></p>
+<p>As of now, supported events are:</p>
+<ul>
+<li>Mouse Click</li>
+<li>Mouse Enter</li>
+<li>Mouse Leave</li>
+</ul>
+<p>When the user performs the chosen event, a <code>Transition</code> is triggered onto the <code>Target State</code>.</p>
+<p>For example, let’s say there are 2 states: <code>state0</code> and <code>state1</code>.</p>
+<p>If we add an <code>Action</code> to the button layer, with the event ‘Click’ and target <code>state</code>, then when the user clicks the button, the component will perform a transition to <code>state1</code>.</p>
+<p><img src="/docs/images/timeline/actions.gif" alt=""></p>
 
     
       <div class="guide-links">
         
-          <span>← <a href="/docs/v1/timeline/timelines.html">Timelines</a></span>
+          <span>← <a href="/docs/v2/timeline/transitions.html">Transitions</a></span>
         
+        
+          <span style="float:right"><a href="/docs/v2/timeline/timelines.html">Timelines</a> →</span>
         
       </div>
     
     <div class="footer">
       Caught a mistake or want to contribute to the documentation?
-      <a href="https://github.com/AnimaApp/docs/blob/master/src/v1/timeline/samples.md" target="_blank">
+      <a href="https://github.com/AnimaApp/docs/blob/master/src/v2/timeline/actions.md" target="_blank">
         Edit this page on Github!
       </a>
     </div>
