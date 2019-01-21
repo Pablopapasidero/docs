@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Auto-Layout for Sketch</title>
   
-  <link href="/docs/atom.xml" rel="self"/>
+  <link href="/atom.xml" rel="self"/>
   
   <link href="https://docs.animaapp.com/"/>
   <updated>2017-08-31T14:04:23.000Z</updated>
