@@ -2,19 +2,19 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>API — Anima</title>
+        <title>Analytics — Anima</title>
         <meta charset="utf-8">
         <link rel="shortcut icon" type="image/png" href="https://animaapp.s3.amazonaws.com/home/favicon.png" />
         <meta name="description" content="Empowering designers.">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
         <meta property="og:type" content="article">
-        <meta property="og:title" content="API — Anima">
+        <meta property="og:title" content="Analytics — Anima">
         <meta property="og:description" content="Empowering designers.">
         <meta property="og:image" content="https://animaapp.s3.amazonaws.com/home/Social_cover.png">
 
         <meta name="twitter:card" content="summary">
-        <meta name="twitter:title" content="API">
+        <meta name="twitter:title" content="Analytics">
         <meta name="twitter:description" content="Empowering designers.">
         <meta name="twitter:image" content="https://animaapp.s3.amazonaws.com/home/Social_cover.png">
 
@@ -26,7 +26,7 @@
 
         <!-- this needs to be loaded before guide's inline scripts -->
         <script src="/js/vue.js"></script>
-        <script>window.PAGE_TYPE = "layout"</script>
+        <script>window.PAGE_TYPE = "Manage Website"</script>
 
         <!-- start Mixpanel --><script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
 0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
@@ -51,9 +51,9 @@ mixpanel.init("b41fb20c39155097cde1725a43229b9d");</script><!-- end Mixpanel -->
     <input type="text" id="search-query-nav" class="search-query st-default-search-input">
   </form>
 </li>
-<li><a href="/v3/layout/" class="nav-link current">Layout</a></li>
+<li><a href="/v3/layout/" class="nav-link">Layout</a></li>
 <li><a href="/v3/prototype/" class="nav-link">Prototype</a></li>
-<li><a href="/v3/export/" class="nav-link">Export</a></li>
+<li><a href="/v3/export/" class="nav-link current">Export</a></li>
 <!--<li><a href="/v1/examples/" class="nav-link">Examples</a></li>-->
 
   </ul>
@@ -70,9 +70,9 @@ mixpanel.init("b41fb20c39155097cde1725a43229b9d");</script><!-- end Mixpanel -->
     <input type="text" id="search-query-sidebar" class="search-query st-default-search-input">
   </form>
 </li>
-<li><a href="/v3/layout/" class="nav-link current">Layout</a></li>
+<li><a href="/v3/layout/" class="nav-link">Layout</a></li>
 <li><a href="/v3/prototype/" class="nav-link">Prototype</a></li>
-<li><a href="/v3/export/" class="nav-link">Export</a></li>
+<li><a href="/v3/export/" class="nav-link current">Export</a></li>
 <!--<li><a href="/v1/examples/" class="nav-link">Examples</a></li>-->
 
     </ul>
@@ -92,103 +92,7 @@ mixpanel.init("b41fb20c39155097cde1725a43229b9d");</script><!-- end Mixpanel -->
                 
                 
                 <li>
-                    <a href="/v3/layout/index.html" class="sidebar-link">Layout</a>
-                </li>
-                
-            
-                
-                
-                
-                <li>
-                    <a href="/v3/layout/12-stacks-flexbox.html" class="sidebar-link">Stacks (Flexbox)</a>
-                </li>
-                
-            
-                
-                
-                
-                <li>
-                    <a href="/v3/layout/03-pins.html" class="sidebar-link">Pins</a>
-                </li>
-                
-            
-                
-                
-                
-                <li>
-                    <a href="/v3/layout/04-size.html" class="sidebar-link">Size</a>
-                </li>
-                
-            
-                
-                
-                
-                <li>
-                    <a href="/v3/layout/05-center.html" class="sidebar-link">Center</a>
-                </li>
-                
-            
-                
-                
-                
-                <li>
-                    <a href="/v3/layout/06-orientation.html" class="sidebar-link">Orientation</a>
-                </li>
-                
-            
-                
-                
-                
-                <li>
-                    <a href="/v3/layout/07-presets.html" class="sidebar-link">Screen Presets</a>
-                </li>
-                
-            
-                
-                
-                
-                <li>
-                    <a href="/v3/layout/08-symbols.html" class="sidebar-link">Symbols</a>
-                </li>
-                
-            
-                
-                
-                
-                <li>
-                    <a href="/v3/layout/09-arrange.html" class="sidebar-link">Arrange in Grid</a>
-                </li>
-                
-            
-                
-                
-                
-                <li>
-                    <a href="/v3/layout/10-multiple.html" class="sidebar-link">Multiple Selection</a>
-                </li>
-                
-            
-                
-                
-                
-                <li>
-                    <a href="/v3/layout/11-keyboard.html" class="sidebar-link">Keyboard Shortcuts</a>
-                </li>
-                
-            
-                
-                
-                
-                <li>
-                    <a href="/v3/layout/13-examples.html" class="sidebar-link">Examples</a>
-                </li>
-                
-            
-                
-                
-                
-                <li>
-                    <a href="/v3/layout/14-api.html" class="sidebar-link current">API</a>
+                    <a href="/v3/export/07-analytics.html" class="sidebar-link current">Analytics</a>
                 </li>
                 
             
@@ -201,16 +105,48 @@ mixpanel.init("b41fb20c39155097cde1725a43229b9d");</script><!-- end Mixpanel -->
 
 
 
-<div class="content layout with-sidebar ">
+<div class="content Manage Website with-sidebar ">
     
-      <h1>API</h1>
+      <h1>Analytics</h1>
     
-    <p>/Applications/Sketch.app/Contents/Resources/sketchtool/bin/sketchtool run /Users/mac/Library/Developer/Xcode/DerivedData/AnimaPlugin-cjttwxuvczjqaubdoxhtonvqpquj/Build/Products/Debug/LaunchpadPlugin.sketchplugin com.animaapp.prepare-for-export –without-activating</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/74B8ZM84Zvk" frameborder="0" allowfullscreen></iframe>
+
+<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>To track incoming traffic into your website you can signup to any of the <strong>Analytics</strong> providers and paste in the code snippet they provide.</p>
+<p><strong>Guide Overview:</strong></p>
+<ol>
+<li>Signup to an <strong>Analytics</strong> provider of your choice</li>
+<li>Create a website tracking project in the <strong>Analytics</strong> provider dashboard</li>
+<li>Copy and paste the tracking <strong>Code snippet</strong> in the  <strong>Analytics</strong> section of your <strong>Anima Website Settings</strong></li>
+</ol>
+<h2 id="Google-Analytics"><a href="#Google-Analytics" class="headerlink" title="Google Analytics"></a>Google Analytics</h2><p><img src="/docs/images/launchpad/analytics/google/howto.gif" alt=""></p>
+<p>Create website tracking project:<br><img src="http://f.cl.ly/items/2k1E0h3H2T2A1r1R0l31/Create%20project.png" alt=""></p>
+<p>Click <em>‘Get Tracking ID’</em></p>
+<p><img src="http://f.cl.ly/items/3n2s131R063X3x0M0s2n/Get%20tracking%20ID.png" alt=""></p>
+<p>Copy the provided <strong>Code snippet</strong></p>
+<p><img src="http://f.cl.ly/items/3h1E3n0w3Q3N3s3m0s0t/Copy%20Snippet.png" alt=""></p>
+<p>Paste the <strong>Code snippet</strong> in the <strong>Analytics</strong> section in <strong>Website Settings</strong>.</p>
+<p>![](<a href="http://f.cl.ly/items/161a1C3h0T1i3B2p3F0t/Paste%20code%20snippet.png" target="_blank" rel="external">http://f.cl.ly/items/161a1C3h0T1i3B2p3F0t/Paste%20code%20snippet.png</a></p>
+<h2 id="Mixpanel"><a href="#Mixpanel" class="headerlink" title="Mixpanel"></a>Mixpanel</h2><p>Create website tracking project:</p>
+<p>![]<a href="https://docs.animaapp.com/images/launchpad/analytics/mixpanel/1.jpg">https://docs.animaapp.com/images/launchpad/analytics/mixpanel/1.jpg</a>)</p>
+<p><img src="https://docs.animaapp.com/images/launchpad/analytics/mixpanel/2.jpg" alt=""></p>
+<p>Copy the provided <strong>Code snippet</strong></p>
+<p><img src="https://docs.animaapp.com/images/launchpad/analytics/mixpanel/3.jpg" alt=""></p>
+<p>Paste the <strong>Code snippet</strong> in the <strong>Analytics</strong> section in <strong>Website Settings</strong>.</p>
+<p><img src="http://f.cl.ly/items/161a1C3h0T1i3B2p3F0t/Paste%20code%20snippet.png" alt=""></p>
+<h2 id="Statcounter"><a href="#Statcounter" class="headerlink" title="Statcounter"></a>Statcounter</h2><p>Create website tracking project:</p>
+<p><img src="https://docs.animaapp.com/images/launchpad/analytics/statcounter/1.png" alt=""></p>
+<p>Scroll down and click ‘<em>Add Project</em>‘:</p>
+<p><img src="https://docs.animaapp.com/images/launchpad/analytics/statcounter/2.png" alt=""></p>
+<p>Copy the provided <strong>Code snippet</strong></p>
+<p><img src="https://docs.animaapp.com/images/launchpad/analytics/statcounter/3.png" alt=""></p>
+<p><img src="https://docs.animaapp.com/images/launchpad/analytics/statcounter/4.png" alt=""></p>
+<p>Paste the <strong>Code snippet</strong> in the <strong>Analytics</strong> section in <strong>Website Settings</strong>.</p>
+<p><img src="http://f.cl.ly/items/161a1C3h0T1i3B2p3F0t/Paste%20code%20snippet.png" alt=""></p>
 
     
     <div class="footer">
       Caught a mistake or want to contribute to the documentation?
-      <a href="https://github.com/AnimaApp/docs/blob/master/src/v3/layout/14-api.md" target="_blank">
+      <a href="https://github.com/AnimaApp/docs/blob/master/src/v3/export/07-analytics.md" target="_blank">
         Edit this page on Github!
       </a>
     </div>
