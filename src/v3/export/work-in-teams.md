@@ -1,10 +1,8 @@
-
 ---
 title: Working In Teams
-type: export
+type: Export
 order: 2
 ---
-
 ## Introduction
 
 #### Anima Is a Collaboration Hub
@@ -41,7 +39,7 @@ Steps we will be taking throughout this guide:
 
 ![](https://downloads.intercomcdn.com/i/o/97051833/396813738dcde6d51c05a0d0/Screen+Shot+2019-01-15+at+11.44.07+AM.png)
 
-ℹ️ **Tips:** _Drafts_
+**Tips:** _Drafts_
 
 -   _Each time you "_**_Preview in Browser"_**_, Anima creates a_ **_Draft_** _of your work_
 -   **_Drafts_** _are only visible to you_
@@ -127,9 +125,9 @@ This chart explains who can see and edit your work:
 
 ## Commenting
 
-  When viewing the **Prototype** in the browser, click on the _Dialog_ Icon to leave **Comments** and feedback.
+  When viewing the **Prototype** in the browser, click on the _Dialog_ Icon to leave **Comments** and feedback
 
-![Adding Comments](https://downloads.intercomcdn.com/i/o/97106839/e25a24e000b60816ef40c779/Comment.gif)
+![](https://downloads.intercomcdn.com/i/o/97106839/e25a24e000b60816ef40c779/Comment.gif)
 
 ## Sharing Project  Outside of Your Team
 
@@ -140,3 +138,4 @@ Create a **Public Link** to share and invite others that are not in your team (i
 3.  Enable and copy a **Public Link** to share with anyone
 
 ![](https://downloads.intercomcdn.com/i/o/97110805/c9d6739a33a2066b3ad01063/Public+link.gif)
+
